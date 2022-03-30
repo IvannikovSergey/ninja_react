@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ninja_project.iml" filepath="$PROJECT_DIR$/.idea/ninja_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ninja_react.iml" filepath="$PROJECT_DIR$/.idea/ninja_react.iml" />
     </modules>
   </component>
 </project>
