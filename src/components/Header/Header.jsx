@@ -1,10 +1,8 @@
-import style from './Header.module.css'
+// import style from './Header.module.css'
+// import {NavLink} from "react-router-dom";
+// import Nav from "../Nav/Nav";
 
 const Header = () => {
-    return <header className={style.header}>
-        <img
-            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/business-logo-design-template-78655edda18bc1196ab28760f1535baa_screen.jpg?ts=1617645324"
-            alt="picture"/>
-    </header>
+    return null
 }
 export default Header

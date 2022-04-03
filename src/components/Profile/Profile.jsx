@@ -1,16 +1,10 @@
-// import style from './Profile.module.css'
+import style from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./MyPosts/ProfileInfo/ProfileInfo";
 
 const Profile = () => {
-    return <div className='app-wrapper-content'>
-        <div>
-            <img
-                src="https://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg"
-                alt=""/>
-        </div>
-        <div>
-            ava + description
-        </div>
+    return <div className={style.appWrapperContent}>
+        <ProfileInfo/>
         <MyPosts/>
     </div>
 }

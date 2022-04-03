@@ -1,7 +1,13 @@
 .item {
-    color: aliceblue;
+    color: black;
+    margin-right: 20px;
 }
 
 .item img {
     width: 50px;
+    margin-top: 10px;
+}
+
+.textItem {
+
 }
