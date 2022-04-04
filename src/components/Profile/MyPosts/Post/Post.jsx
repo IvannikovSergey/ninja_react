@@ -7,7 +7,10 @@ const Post = (props) => {
         </div>
         <div className={style.textItem}>
             {props.message}
-            likes: {props.likes}
+            <div>
+                <span>likes:</span>
+                {props.likes}
+            </div>
         </div>
     </div>
 }
