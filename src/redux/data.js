@@ -6,7 +6,7 @@ const state = {
             {id: '1', message: 'How are you?', likesCount: 12},
             {id: '2', message: 'OK', likesCount: 11}
         ],
-        newPostText: 'Helloчччч'
+        newPostText: 'Hello'
     },
     dialogPage: {
         dialogs: [
@@ -24,21 +24,22 @@ const state = {
         ]
     }
 }
-// window.state = state
-export let addPost = (newPost) => {
+window.state = state
+
+export let addPost = () => {
     let post = {
         id: '3',
-        message: newPost,
+        message: state.profilePage.newPostText,
         likesCount: 0
     }
     state.profilePage.posts.push(post);
-    updateText(newPost)
+    state.profilePage.newPostText = ''
     reRender(state)
-    updateText('')
 }
 
-export const updateText = (text) => {
-    state.profilePage.newPostText = text
+export const updatePostText = (newText) => {
+    state.profilePage.newPostText = newText
+    reRender(state)
 }
 
 export default state

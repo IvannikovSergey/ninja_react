@@ -1,13 +1,13 @@
 import ReactDOMClient from "react-dom/client";
 import App from "./App";
-import {updateText, addPost} from "./redux/data";
+import {addPost, updatePostText} from "./redux/data";
 import React from "react";
 
+const container = document.getElementById('root')
+const root = ReactDOMClient.createRoot(container)
 
 export const reRender = (state) => {
-    const container = document.getElementById('root')
-    const root = ReactDOMClient.createRoot(container)
     root.render(
-        <App state={state} addPost={addPost}/>
+        <App state={state} addPost={addPost} updatePostText={updatePostText}/>
     );
 }

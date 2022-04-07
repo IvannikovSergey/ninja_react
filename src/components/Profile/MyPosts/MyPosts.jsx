@@ -7,12 +7,12 @@ const MyPosts = (props) => {
     const getMessage = useRef(null)
 
     const addNewPost = () => {
-        let text = getMessage.current.value;
-        props.addPost(text)
+        props.addPost()
     }
 
     const onTextChange = () => {
-
+        let text = getMessage.current.value;
+        props.updatePostText(text)
     }
     return <div className="row">
         <h3>Мои сообщения</h3>
@@ -20,7 +20,7 @@ const MyPosts = (props) => {
             <form className="col s12">
                 <div className="row">
                     <div className="input-field col s12">
-                        <textarea onChange={onTextChange} value={props.newPostText} ref={getMessage}
+                        <textarea onChange={onTextChange} defaultValue={props.newPostText} ref={getMessage}
                                   placeholder='Написать новость' id="textarea1"
                                   className="materialize-textarea"/>
                     </div>
