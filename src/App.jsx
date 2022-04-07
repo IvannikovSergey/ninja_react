@@ -13,11 +13,13 @@ const App = (props) => {
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Nav/>
-                <div className='app-wrapper-content'>
+                <div className='container'>
                     <Routes>
-                        <Route path='/dialogs/*'
-                               element={<Dialog dialogs={props.dialogs} messages={props.messages}/>}/>
-                        <Route path='/profile/*' element={<Profile posts={props.posts}/>}/>
+                        <Route path='/dialogs/*' element={<Dialog state={props.state.dialogPage}/>}/>
+                        <Route path='/profile/*'
+                               element={<Profile
+                                   state={props.state.profilePage}
+                                   addPost={props.addPost}/>}/>
                         <Route path='news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>

@@ -3444,9 +3444,9 @@ table span.badge {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 1rem auto;
     max-width: 1280px;
-    width: 90%;
+    width: 100%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3486,7 +3486,7 @@ table span.badge {
 .row {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .row:after {
@@ -4698,7 +4698,7 @@ h2 {
 h3 {
     font-size: 2.92rem;
     line-height: 110%;
-    margin: 1.9466666667rem 0 1.168rem 0;
+    margin: 2px 0 2px 0;
 }
 
 h4 {
@@ -4979,11 +4979,12 @@ small {
 
 .card.horizontal .card-image {
     max-width: 50%;
+    padding: 1rem;
 }
 
 .card.horizontal .card-image img {
     border-radius: 2px 0 0 2px;
-    max-width: 100%;
+    max-width: 90%;
     width: auto;
 }
 
